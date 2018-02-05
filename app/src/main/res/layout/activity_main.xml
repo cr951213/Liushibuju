@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff"
+    tools:context="com.example.administrator.liushibuju.MainActivity">
+
+   <LinearLayout
+       android:background="#FFF2F1F1"
+       android:orientation="horizontal"
+       android:gravity="center"
+
+       android:layout_width="match_parent"
+       android:layout_height="80dp">
+
+       <ImageView
+           android:id="@+id/ss_fh"
+           android:layout_weight="1"
+           android:src="@mipmap/sobot_webview_toolsbar_back_disable"
+           android:layout_width="wrap_content"
+           android:layout_height="50dp" />
+
+       <ImageView
+           android:src="@mipmap/icon_search"
+           android:layout_width="30dp"
+           android:layout_height="30dp" />
+
+
+       <EditText
+           android:id="@+id/ss_sr"
+           android:layout_weight="3"
+           android:hint="2018LPL英雄联盟"
+           android:layout_width="wrap_content"
+           android:layout_height="50dp" />
+       <TextView
+           android:id="@+id/ss_ss"
+           android:layout_weight="1"
+           android:text="搜索"
+           android:textSize="20dp"
+           android:gravity="center"
+           android:textColor="#f00"
+           android:layout_width="wrap_content"
+           android:layout_height="50dp" />
+
+   </LinearLayout>
+
+<TextView
+    android:text="热门搜索"
+    android:textSize="17sp"
+    android:layout_marginLeft="20dp"
+    android:layout_marginTop="20dp"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content" />
+
+<com.example.library.AutoFlowLayout
+    android:id="@+id/afl_cotent"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+</com.example.library.AutoFlowLayout>
+
+
+    <TextView
+        android:background="#FFF9F6F6"
+        android:layout_width="match_parent"
+        android:layout_height="5dp" />
+    <TextView
+        android:text="历史搜索"
+        android:textSize="17sp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <ImageView
+        android:src="@mipmap/img_empty_medal_list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+
+</LinearLayout>
